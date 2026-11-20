@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>rateme4hook - Legal & Privacy</title>
+<style>
+:root { --bg: #0e1013; --surface: #181b20; --border: #2a2e36; --text: #f3f4f6; --muted: #9ca3af; --accent: #00f5a0; --danger: #ff5c77; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 24px 16px 60px; }
+.container { max-width: 820px; margin: 0 auto; }
+input[type="radio"] { display: none; }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+h1 { font-size: 1.5rem; color: var(--accent); }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; }
+label.tab-btn { background: var(--surface); color: var(--text); border: 1px solid var(--border); padding: 8px 14px; border-radius: 10px; cursor: pointer; font-weight: 600; font-size: 0.85rem; user-select: none; }
+#tab-privacy:checked ~ header label[for="tab-privacy"], #tab-terms:checked ~ header label[for="tab-terms"], #lang-tr:checked ~ header label[for="lang-tr"], #lang-en:checked ~ header label[for="lang-en"] { background: var(--accent); color: #000; border-color: var(--accent); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 28px 24px; display: none; }
+#tab-privacy:checked ~ #sec-privacy { display: block; }
+#tab-terms:checked ~ #sec-terms { display: block; }
+.lang-tr, .lang-en { display: none; }
+#lang-tr:checked ~ .card .lang-tr { display: block; }
+#lang-en:checked ~ .card .lang-en { display: block; }
+h2 { font-size: 1.35rem; margin-bottom: 6px; color: #fff; }
+.date { font-size: 0.85rem; color: var(--muted); margin-bottom: 22px; display: block; }
+h3 { font-size: 1.05rem; color: var(--accent); margin: 22px 0 8px; }
+p, li { color: #d1d5db; font-size: 0.95rem; margin-bottom: 10px; }
+ul { padding-left: 20px; margin-bottom: 12px; }
+.alert { background: rgba(255, 92, 119, 0.12); border: 1px solid rgba(255, 92, 119, 0.4); padding: 14px 16px; border-radius: 12px; margin: 16px 0; }
+.alert strong { color: var(--danger); }
+a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+<input type="radio" name="tab" id="tab-privacy" checked />
+<input type="radio" name="tab" id="tab-terms" />
+<input type="radio" name="lang" id="lang-tr" checked />
+<input type="radio" name="lang" id="lang-en" />
+
+<header>
+<h1>rateme4hook</h1>
+<div class="controls">
+<label for="tab-privacy" class="tab-btn">Gizlilik / Privacy</label>
+<label for="tab-terms" class="tab-btn">Koşullar / Terms</label>
+<label for="lang-tr" class="tab-btn">🇹🇷 TR</label>
+<label for="lang-en" class="tab-btn">🇺🇸 EN</label>
+</div>
+</header>
+
+<section id="sec-privacy" class="card">
+<div class="lang-tr">
+<h2>Gizlilik Politikası</h2>
+<span class="date">Son Güncelleme: 17 Kasım 2026</span>
+<p><strong>rateme4hook</strong> ("Uygulama", "Biz") olarak kullanıcılarımızın gizliliğine ve kişisel verilerinin korunmasına büyük önem veriyoruz. Bu Gizlilik Politikası, uygulamamızı kullandığınızda hangi verilerin toplandığını, nasıl işlendiğini ve KVKK ile GDPR kapsamındaki haklarınızı açıklamaktadır.</p>
+<h3>1. Toplanan Veriler</h3>
+<ul>
+<li><strong>Hesap ve Profil Bilgileri:</strong> Ad, yaş, biyografi metni, profil fotoğrafları ve hesap doğrulama (e-posta, telefon veya selfie doğrulama) verileri.</li>
+<li><strong>Etkileşim ve Puanlama Verileri:</strong> Uygulama içi değerlendirmeler, puan geçmişi, liderlik tablosu sıralamaları ve engellenen/şikayet edilen kullanıcı kayıtları.</li>
+<li><strong>Satın Alma Kayıtları:</strong> Uygulama içi Coin satın alma işlemleri ve tarihleri. Kredi kartı bilgileriniz tarafımızca görülmez ve saklanmaz; ödemeler Apple App Store veya Google Play altyapısı üzerinden işlenir.</li>
+<li><strong>Teknik Veriler:</strong> Uygulama performansı, hata kayıtları ve dil tercihi.</li>
+</ul>
+<h3>2. Verilerin Kullanım Amacı</h3>
+<ul>
+<li>Profilinizi oluşturmak, keşfet ve liderlik tablosu özelliklerini sunmak.</li>
+<li>Sahte hesapları önlemek, topluluk güvenliğini sağlamak ve kötüye kullanımı tespit etmek.</li>
+<li>Satın aldığınız Coin bakiyesini ve işlem geçmişinizi hesabınıza tanımlamak.</li>
+</ul>
+<h3>3. Veri Saklama ve Güvenlik</h3>
+<p>Verileriniz şifreli bulut altyapısı (<strong>Supabase</strong>) üzerinde barındırılmaktadır ve hiçbir koşulda reklam ağlarına veya üçüncü taraflara satılmaz.</p>
+<h3>4. Hesap Silme ve Haklarınız</h3>
+<p>Uygulama içi ayarlardan veya <strong><a href="mailto:tahirkazankaya.tk@gmail.com">tahirkazankaya.tk@gmail.com</a></strong> adresine e-posta göndererek hesabınızın ve tüm verilerinizin kalıcı olarak silinmesini talep edebilirsiniz. Talepler en geç 7 iş günü içinde tamamlanır.</p>
+<h3>5. Yaş Sınırı</h3>
+<p>Uygulamamız yalnızca <strong>18 yaş ve üzeri</strong> bireylere yöneliktir. 18 yaşından küçük kullanıcılara ait hesaplar derhal kapatılır.</p>
+</div>
+
+<div class="lang-en">
+<h2>Privacy Policy</h2>
+<span class="date">Last Updated: November 17, 2026</span>
+<p>At <strong>rateme4hook</strong> ("App", "We", "Us"), we respect your privacy and protect your personal data in accordance with GDPR and applicable data protection laws.</p>
+<h3>1. Information We Collect</h3>
+<ul>
+<li><strong>Account & Profile Data:</strong> Name, age, bio, profile photos, and verification records (email, phone, or selfie verification).</li>
+<li><strong>Activity & Leaderboard Data:</strong> Ratings, points history, leaderboard rankings, and block/report logs.</li>
+<li><strong>Purchase History:</strong> In-app Coin purchase records and timestamps. We never collect or store credit card details; payments are processed by Apple App Store or Google Play.</li>
+<li><strong>Technical Data:</strong> App diagnostics, crash logs, and language preferences.</li>
+</ul>
+<h3>2. How We Use Your Information</h3>
+<ul>
+<li>To display your profile, enable rating features, and calculate leaderboard rankings.</li>
+<li>To verify authenticity, prevent abuse, and maintain community safety.</li>
+<li>To credit purchased Coins and maintain your transaction history.</li>
+</ul>
+<h3>3. Data Storage & Security</h3>
+<p>Your data is securely stored on encrypted cloud infrastructure (<strong>Supabase</strong>) and is never sold or rented to third parties.</p>
+<h3>4. Account Deletion & Your Rights</h3>
+<p>You may request permanent deletion of your account and all uploaded data at any time via in-app settings or by emailing <strong><a href="mailto:tahirkazankaya.tk@gmail.com">tahirkazankaya.tk@gmail.com</a></strong>.</p>
+<h3>5. Age Restriction</h3>
+<p>This app is strictly for individuals aged <strong>18 years and older</strong>. Accounts belonging to minors are terminated immediately.</p>
+</div>
+</section>
+
+<section id="sec-terms" class="card">
+<div class="lang-tr">
+<h2>Kullanım Koşulları</h2>
+<span class="date">Son Güncelleme: 17 Kasım 2026</span>
+<p><strong>rateme4hook</strong> uygulamasını indirerek veya kullanarak aşağıdaki Kullanım Koşulları'nı kabul etmiş sayılırsınız.</p>
+<div class="alert"><strong>Sıfır Tolerans Politikası:</strong> Çıplaklık, cinsel içerik, nefret söylemi, zorbalık, taciz ve başkasına ait fotoğrafların izinsiz kullanımına karşı sıfır tolerans uygulanmaktadır.</div>
+<h3>1. Üyelik ve Yaş Sınırı</h3>
+<ul>
+<li>Uygulamayı kullanabilmek için en az <strong>18 yaşında</strong> olmanız zorunludur.</li>
+<li>Profilinizde yalnızca kendinize ait, güncel ve yasalara uygun fotoğraflar paylaşabilirsiniz.</li>
+</ul>
+<h3>2. Kullanıcı İçeriği ve Moderasyon</h3>
+<ul>
+<li>Kullanıcılar rahatsız edici profilleri uygulama içindeki <strong>Engelle</strong> ve <strong>Şikayet Et</strong> butonlarıyla anında bildirebilirler.</li>
+<li>Şikayetler incelenir; kuralları ihlal eden içerikler kaldırılır ve ilgili hesaplar kalıcı olarak yasaklanır.</li>
+</ul>
+<h3>3. Sanal Para Birimi (Coin) ve Satın Almalar</h3>
+<ul>
+<li>Satın alınan Coin'ler yalnızca uygulama içi özelliklerde kullanılabilen sanal öğelerdir; nakde çevrilemez ve devredilemez.</li>
+<li>Liderlik tablosu sıralamasına bağlı kazanılan mağaza indirimleri yalnızca ilgili dönem boyunca geçerlidir ve devretmez.</li>
+<li>Satın alma ve iade talepleri Apple App Store veya Google Play Store'un standart iade politikalarına tabidir.</li>
+</ul>
+<h3>4. İletişim</h3>
+<p>Sorularınız veya şikayetleriniz için <strong><a href="mailto:tahirkazankaya.tk@gmail.com">tahirkazankaya.tk@gmail.com</a></strong> adresinden bize ulaşabilirsiniz.</p>
+</div>
+
+<div class="lang-en">
+<h2>Terms of Use (EULA)</h2>
+<span class="date">Last Updated: November 17, 2026</span>
+<p>By downloading or using <strong>rateme4hook</strong>, you agree to be bound by these Terms of Use.</p>
+<div class="alert"><strong>Zero Tolerance Policy:</strong> We maintain a strict zero-tolerance policy against nudity, sexually explicit content, hate speech, harassment, bullying, and impersonation.</div>
+<h3>1. Eligibility & Age Requirement</h3>
+<ul>
+<li>You must be at least <strong>18 years old</strong> to create an account and use this app.</li>
+<li>All photos uploaded to your profile must belong solely to you.</li>
+</ul>
+<h3>2. User-Generated Content & Safety</h3>
+<ul>
+<li>Users can immediately block or report profiles using in-app reporting tools.</li>
+<li>Reported content is reviewed promptly; violating content is removed and offending accounts are permanently terminated.</li>
+</ul>
+<h3>3. Virtual Currency (Coins) & Purchases</h3>
+<ul>
+<li>Coins are virtual licenses for in-app features only; they hold no real-world monetary value and cannot be transferred or redeemed for cash.</li>
+<li>Leaderboard discounts apply strictly within their designated promotional period and do not accumulate.</li>
+<li>All purchases and refunds are governed by Apple App Store or Google Play Store policies.</li>
+</ul>
+
+<h4>4. Contact</h4>
+<ul>
+<li>For support or legal inquiries, contact us at tahirkazankaya.tk@gmail.com.</li>
+</ul>
+
+(function(){
+var h=window.location.hash.replace('#','');
+if(h==='terms'){var t=document.getElementById('tab-terms');if(t)t.checked=true;}
+var p=new URLSearchParams(window.location.search);
+var l=p.get('lang');
+if(l==='en'||(!l&&navigator.language&&!navigator.language.toLowerCase().startsWith('tr'))){var e=document.getElementById('lang-en');if(e)e.checked=true;}
+})();
+
+
+
+
+
+
+
+
+
+
